@@ -38,8 +38,6 @@ object WikipediaRanking {
     .filter(_.mentionsLanguage(lang))
     .count
     .toInt
-
-    //rdd.aggregate(0)(x => x + 1, _ + _)
   }
 
   /* (1) Use `occurrencesOfLang` to compute the ranking of the languages
